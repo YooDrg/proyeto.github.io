@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #34495e;
+            margin: 0 auto 1rem;
+            background-color: #ecf0f1;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .titulo-profesional {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+            margin-bottom: 1rem;
+        }
+
+        .contacto {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .contacto-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        section {
+            padding: 2rem;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .experiencia-item, .educacion-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .fecha {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .habilidades {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .habilidad {
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+            
+            header {
+                padding: 1.5rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="foto-perfil"></div>
+            <h1>María González</h1>
+            <div class="titulo-profesional">Desarrolladora Frontend</div>
+            <div class="contacto">
+                <div class="contacto-item">📧 maria@email.com</div>
+                <div class="contacto-item">📱 +34 612 345 678</div>
+                <div class="contacto-item">📍 Madrid, España</div>
+            </div>
+        </header>
+
+        <section class="perfil">
+            <h2>Perfil Profesional</h2>
+            <p>Desarrolladora frontend con 5 años de experiencia creando aplicaciones web responsive y interfaces de usuario intuitivas. Especializada en JavaScript moderno y frameworks como React y Vue.js.</p>
+        </section>
+
+        <section class="experiencia">
+            <h2>Experiencia Laboral</h2>
+            <div class="experiencia-item">
+                <h3>Desarrolladora Frontend Senior - Tech Solutions</h3>
+                <div class="fecha">2020 - Presente</div>
+                <ul>
+                    <li>Lideré el desarrollo de 3 aplicaciones web con React</li>
+                    <li>Mejoré el rendimiento de aplicaciones en un 40%</li>
+                    <li>Mentoría a desarrolladores junior</li>
+                </ul>
+            </div>
+            <div class="experiencia-item">
+                <h3>Desarrolladora Web - Digital Agency</h3>
+                <div class="fecha">2018 - 2020</div>
+                <ul>
+                    <li>Desarrollé sitios web responsive para más de 20 clientes</li>
+                    <li>Implementé estrategias de SEO</li>
+                    <li>Trabajé con equipos de diseño y marketing</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="educacion">
+            <h2>Educación</h2>
+            <div class="educacion-item">
+                <h3>Grado en Ingeniería Informática</h3>
+                <div class="fecha">2014 - 2018</div>
+                <p>Universidad Complutense de Madrid</p>
+            </div>
+        </section>
+
+        <section class="habilidades">
+            <h2>Habilidades</h2>
+            <div class="habilidades-lista">
+                <span class="habilidad">HTML5</span>
+                <span class="habilidad">CSS3</span>
+                <span class="habilidad">JavaScript</span>
+                <span class="habilidad">React</span>
+                <span class="habilidad">Vue.js</span>
+                <span class="habilidad">Git</span>
+                <span class="habilidad">Responsive Design</span>
+                <span class="habilidad">UI/UX</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
